@@ -13,14 +13,18 @@
             <div class="container">
                 <nav class="site-nav">
                     <ul class="primary-nav">
+                            <!--Added by user for convenience-->
+                        <li>
+                            <a ui-sref="home">Home</a>
+                        </li>
                         <li>
                             <a ui-sref="shop">Shop</a>
                         </li>
                         <li>
-                            <a>Blog</a>
+                            <a ui-sref="blog">Blog</a>
                         </li>
                         <li>
-                            <a>About</a>
+                            <a ui-sref="about">About</a>
                         </li>
                     </ul>
 
@@ -35,7 +39,7 @@
         <!--This is the main wrapper -->
         <main class="site-main" role="main">
 
-
+          <ui-view></ui-view>
 
         </main>
         </div>
@@ -44,5 +48,15 @@
 <!--ADD ALL YOUR SCRIPTS HERE -->
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.1/angular-ui-router.min.js"></script>
+<script src="./app/app.js"></script>
+<script src="./app/mainCtrl.js"></script>
+<script src="./app/mainService.js"></script>
+<script src="./app/routes.js"></script>
+<script src="./app/shopCtrl.js"></script>
+<script src="./app/homeCtrl.js"></script>
+<script src="./app/aboutCtrl.js"></script>
+<script src="./app/blogCtrl.js"></script>
+<script src="./app/product.js"></script>
+<script src="./app/deetsCtrl.js"></script>
 </body>
 </html>
